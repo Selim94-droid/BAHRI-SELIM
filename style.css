@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    padding: 0%;
+    margin: 0;
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+ul li a{
+    padding: 0% 30px;
+    text-decoration: none;
+    color: red;
+}
+li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background-color: red;
+    transition: all .5s;
+}
+li a:hover::after{
+    width: 100%;
+}
+main{
+    display: flex;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: center;
+    height:calc(100vh - 100px)
+}
+.hero-image{
+    max-width: 300px;
+    height: 420px;
+}
+.content-left{
+    width: 30%;
+}
+main h1{
+    font-size: 54px;
+    color: blueviolet;
+    text-transform: capitalize;
+}
+main h2{
+    font-size: 25px;
+    color: brown;
+    font-weight: 400px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+main p{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    line-height: 32px;
+    margin: 30px 0;
+}
+.cta{
+    padding: 15px 30px;
+    background-color: brown;
+    color:  white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 50px;
+}
+.signup-btn{
+    padding: 10px 20px;
+    color: red;
+    outline: none;
+    font-weight: 700;
+    text-transform: capitalize;
+}
